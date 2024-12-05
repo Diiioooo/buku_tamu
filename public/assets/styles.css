@@ -1,0 +1,119 @@
+/* Styling untuk gambar sudut */
+.corner-image {
+    position: absolute;
+    width: 50px;  /* Sesuaikan ukuran gambar */
+    height: 50px; /* Sesuaikan ukuran gambar */
+}
+
+/* Gambar kiri di dalam container, pojok kiri atas */
+.corner-image.left {
+    top: 0;
+    left: 0;
+}
+
+/* Gambar kanan di dalam container, pojok kanan atas */
+.corner-image.right {
+    top: 0;
+    right: 0;
+}
+
+
+/* Responsive design */
+/* Container styling */
+.container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(156, 167, 197, 0.7); /* Transparent white */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+/* Background video container */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'dank mono' ;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: "dank mono";
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+    
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}

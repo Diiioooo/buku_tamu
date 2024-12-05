@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+}
+
+/* Signature pad styling */
+#signature-pad {
+    border: 2px solid #000;
+    background-color: #fff;
+    cursor: crosshair;
+    width: 100%; /* Responsive width */
+    aspect-ratio: 3 / 2; /* Maintain aspect ratio */
+}
+
+/* Controls styling */
+#controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the back arrow */
+.back-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #007bff;
+}
+
+.back-link svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.back-link:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    button {
+        width: 100%; /* Full-width buttons on smaller screens */
+        padding: 12px;
+    }
+}
